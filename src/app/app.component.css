@@ -1,0 +1,48 @@
+.info {
+    height: 5vh;
+    line-height: 5vh;
+    margin-left: 10px;
+}
+
+.map {
+    height: 90vh;
+    width: 100%;
+}
+
+.ol-popup {
+    position: absolute;
+    background-color: rgb(248, 230, 230);
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    left: -50px;
+    min-width: 450px;
+    max-height: 300px;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: auto;
+}
+
+.ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+.ol-popup-closer:after {
+    content: '✖';
+    color: rgb(170, 49, 49);
+}
